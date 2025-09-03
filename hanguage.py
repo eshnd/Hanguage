@@ -90,12 +90,12 @@ if __name__ == "__main__":
     
 
     if full_text.strip() == "":
+        print("Examples:")
+        print("Hello guys -> " + convert("Hello guys"))
+        print("541 -> " + convert("541"))
+        print("5 4 1 -> " + convert("5 4 1"))
+        print("!!!@@! -> " + convert("!!!@@!"))
         while True:
-            print("Examples:")
-            print("Hello guys -> " + convert("Hello guys"))
-            print("541 -> " + convert("541"))
-            print("5 4 1 -> " + convert("5 4 1"))
-            print("!!!@@! -> " + convert("!!!@@!"))
             i = input("Hanguage converter: ")
             if i != "exit":
                 print(convert(i))
