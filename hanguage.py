@@ -70,13 +70,7 @@ args = parser.parse_args()
 
 full_text = " ".join(args.text)
 
-if full_text.strip() == "":
-    while True:
-        i = input("Hanguage converter: ")
-        if i != "exit":
-            print(convert(i))
-        else:
-            break
+
 
 m = {}
 m.update(letters)
@@ -93,4 +87,11 @@ def convert(inp):
             o.append(c)
     return ".".join(o)
 
+if full_text.strip() == "":
+    while True:
+        i = input("Hanguage converter: ")
+        if i != "exit":
+            print(convert(i))
+        else:
+            break
 print(convert(full_text))
