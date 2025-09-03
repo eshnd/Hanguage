@@ -92,23 +92,28 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("text", nargs=argparse.REMAINDER, help="all words after script name")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("-t", "--to-hanguage", type=str, help="Converts english to hanguage")
+    group.add_argument("-f", "--from-hanguage", type=str, help="Converts english to hanguage")
     
     args = parser.parse_args()
     
-    full_text = " ".join(args.text)
-    
-
-    if full_text.strip() == "":
+    if args.to_hanguage:
+        print(to_h(full_text))
+    elif args.from_hanguage:
+        print(from_h(full_text))
+    else:
         print("Examples:")
-        print("Hello guys -> " + convert("Hello guys"))
-        print("541 -> " + convert("541"))
-        print("5 4 1 -> " + convert("5 4 1"))
-        print("!!!@@! -> " + convert("!!!@@!"))
+        print("Hello guys -> " + to_h("Hello guys"))
+        print("541 -> " + to_h("541"))
+        print(to_h("5 4 1") + " -> 5 4 1")
+        print(to_h("!!!@@!") + " -> !!!@@!")
         while True:
-            i = input("Hanguage converter: ")
-            if i != "exit":
-                print(convert(i))
-            else:
+            i = input("Do you want to 1. convert to hanguage, 2. convert from hanguage, or 3. exit?: ")
+            if "1" in i:
+                print(to_h(input("Input: ")))
+            elif "2" in i:
+                print(from_h(input("Input: ")))
+            elif "3" in i:
                 break
-    print(convert(full_text))
+
