@@ -77,17 +77,18 @@ def to_h(inp):
         else:
             o.append(c)
     return ".".join(o)
-    
-def from_h(inp):
+
+def from_h(i):
     s = {v: k for k, v in m.items()}
     o = []
-    for c in inp:
+    for c in i.split("."):
         c = c.lower()
-        if c in m:
+        if c in s:
             o.append(s[c])
         else:
             o.append(c)
     return "".join(o)
+
 if __name__ == "__main__":
     import argparse
     
