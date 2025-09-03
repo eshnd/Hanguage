@@ -1,10 +1,66 @@
 #!/usr/bin/env python3
 
-letters = { "Hhhhh": "a", "h": "b", "hh": "c", "Hh": "d", "HH": "e", "hH": "f", "hhh": "g", "Hhh": "h", "HHh": "i", "HhH": "j", "HHH": "k", "hHH": "l", "hHh": "m", "Hhhh": "n", "hhHh": "o", "hhH": "p", "hHhH": "q", "HhHH": "r", "hhhh": "s", "hHhhh": "t", "HhHh": "u", "hhhH": "v", "hhHH": "w", "HhhH": "x", "hhhhh": "y", "HHHHH": "z", "H": " "}
+letters = {
+    "a": "h",
+    "b": "hh",
+    "c": "Hh",
+    "d": "HH",
+    "e": "hH",
+    "f": "hhh",
+    "g": "Hhh",
+    "h": "HHh",
+    "i": "HhH",
+    "j": "HHH",
+    "k": "hHH",
+    "l": "hHh",
+    "m": "Hhhh",
+    "n": "hhHh",
+    "o": "hhH",
+    "p": "hHhH",
+    "q": "HhHH",
+    "r": "hhhh",
+    "s": "hHhhh",
+    "t": "HhHh",
+    "u": "hhhH",
+    "v": "hhHH",
+    "w": "HhhH",
+    "x": "hhhhh",
+    "y": "HHHHH",
+    "z": "hHHH",
+    " ": "H"
+}
 
-numbers = { "-h-": "1", "-hh-": "2", "-Hh-": "3", "-HH-": "4", "-hhh-": "5", "-hHh-": "6", "-Hhh-": "7", "-HHh-": "8", "-HHH-": "9", "-HHHH-": "0" }
+numbers = {
+    "1": "-h-",
+    "2": "-hh-",
+    "3": "-Hh-",
+    "4": "-HH-",
+    "5": "-hhh-",
+    "6": "-hHh-",
+    "7": "-Hhh-",
+    "8": "-HHh-",
+    "9": "-HHH-",
+    "0": "-HHHH-"
+}
 
-symbols = { "~h~": "@", "~hh~": "#", "~Hh~": "$", "~hH~": "_", "~HH~": "&", "~hhh~": "+", "~hHh~": "-", "~Hhh~": "×", "~hhH~": "÷", "~hhhhh~": "π", "~HhHh~": "*", "~hhhH~": '"', "~HHHH~": "=", "~HhHHh~": "?", "~HhHhH~": "!", "~HHhHh~": ":"} #I added : for :V and for :D  
+symbols = {
+    "@": "~h~",
+    "#": "~hh~",
+    "$": "~Hh~",
+    "_": "~hH~",
+    "&": "~HH~",
+    "+": "~hhh~",
+    "-": "~hHh~",
+    "×": "~Hhh~",
+    "÷": "~hhH~",
+    "π": "~hhhhh~",
+    "*": "~HhHh~",
+    '"': "~hhhH~",
+    "=": "~HHHH~",
+    "?": "~HhHHh~",
+    "!": "~HhHhH~"
+}
+
 
 
 m = {}
@@ -60,4 +116,3 @@ if __name__ == "__main__":
                 print(from_h(input("Input: ")))
             elif "3" in i:
                 break
-
