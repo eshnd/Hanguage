@@ -4,7 +4,7 @@ letters = { "Hhhhh": "a", "h": "b", "hh": "c", "Hh": "d", "HH": "e", "hH": "f", 
 
 numbers = { "-h-": "1", "-hh-": "2", "-Hh-": "3", "-HH-": "4", "-hhh-": "5", "-hHh-": "6", "-Hhh-": "7", "-HHh-": "8", "-HHH-": "9", "-HHHH-": "0" }
 
-symbols = { "~h~": "@", "~hh~": "#", "~Hh~": "$", "~hH~": "_", "~HH~": "&", "~hhh~": "+", "~hHh~": "-", "~Hhh~": "×", "~hhH~": "÷", "~hhhhh~": "π", "~HhHh~": "*", "~hhhH~": '"', "~HHHH~": "=", "~HhHHh~": "?", "~HhHhH~": "!" "~HHhHh~": ":"} #I added : for :V and for :D  
+symbols = { "~h~": "@", "~hh~": "#", "~Hh~": "$", "~hH~": "_", "~HH~": "&", "~hhh~": "+", "~hHh~": "-", "~Hhh~": "×", "~hhH~": "÷", "~hhhhh~": "π", "~HhHh~": "*", "~hhhH~": '"', "~HHHH~": "=", "~HhHHh~": "?", "~HhHhH~": "!", "~HHhHh~": ":"} #I added : for :V and for :D  
 
 
 m = {}
