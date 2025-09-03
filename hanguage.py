@@ -61,6 +61,16 @@ symbols = {
     "!": "~HhHhH~"
 }
 
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("text", nargs=argparse.REMAINDER, help="all words after script name")
+
+args = parser.parse_args()
+
+full_text = " ".join(args.text)
+
+
 m = {}
 m.update(letters)
 m.update(numbers)
@@ -76,9 +86,4 @@ def convert(inp):
             o.append(c)
     return ".".join(o)
 
-if __name__ == "__main__":
-    print(convert("Hello guys"))
-    print(convert("541"))
-    print(convert("5 4 1"))
-    print(convert("!!!@@!"))
-
+print(convert(full_text))
