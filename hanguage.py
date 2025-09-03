@@ -1,3 +1,5 @@
+#!/bin/python
+
 letters = {
     "a": "h",
     "b": "hh",
