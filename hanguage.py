@@ -104,10 +104,10 @@ if __name__ == "__main__":
         print(from_h(full_text))
     else:
         print("Examples:")
-        print("Hello guys -> " + to_h("Hello guys"))
-        print("541 -> " + to_h("541"))
-        print(to_h("5 4 1") + " -> 5 4 1")
-        print(to_h("!!!@@!") + " -> !!!@@!")
+        print("    Hello guys -> " + to_h("Hello guys"))
+        print("    541 -> " + to_h("541"))
+        print("    " + to_h("5 4 1") + " -> 5 4 1")
+        print("    " + to_h("!!!@@!") + " -> !!!@@!")
         while True:
             i = input("Do you want to 1. convert to hanguage, 2. convert from hanguage, or 3. exit?: ")
             if "1" in i:
