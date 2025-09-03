@@ -61,15 +61,6 @@ symbols = {
     "!": "~HhHhH~"
 }
 
-import argparse
-
-parser = argparse.ArgumentParser()
-parser.add_argument("text", nargs=argparse.REMAINDER, help="all words after script name")
-
-args = parser.parse_args()
-
-full_text = " ".join(args.text)
-
 
 
 m = {}
@@ -87,11 +78,27 @@ def convert(inp):
             o.append(c)
     return ".".join(o)
 
-if full_text.strip() == "":
-    while True:
-        i = input("Hanguage converter: ")
-        if i != "exit":
-            print(convert(i))
-        else:
-            break
+if __name__ == "__main__":
+    import argparse
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("text", nargs=argparse.REMAINDER, help="all words after script name")
+    
+    args = parser.parse_args()
+    
+    full_text = " ".join(args.text)
+    
+
+    if full_text.strip() == "":
+        while True:
+            print("Examples:")
+            print("Hello guys -> " + convert("Hello guys"))
+            print("541 -> " + convert("541"))
+            print("5 4 1 -> " + convert("5 4 1"))
+            print("!!!@@! -> " + convert("!!!@@!"))
+            i = input("Hanguage converter: ")
+            if i != "exit":
+                print(convert(i))
+            else:
+                break
 print(convert(full_text))
