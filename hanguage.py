@@ -68,7 +68,7 @@ m.update(letters)
 m.update(numbers)
 m.update(symbols)
 
-def convert(inp):
+def to_h(inp):
     o = []
     for c in inp:
         c = c.lower()
@@ -77,7 +77,17 @@ def convert(inp):
         else:
             o.append(c)
     return ".".join(o)
-
+    
+def from_h(inp):
+    s = {v: k for k, v in m.items()}
+    o = []
+    for c in inp:
+        c = c.lower()
+        if c in m:
+            o.append(s[c])
+        else:
+            o.append(c)
+    return "".join(o)
 if __name__ == "__main__":
     import argparse
     
