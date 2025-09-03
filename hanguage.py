@@ -92,7 +92,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser()
-    group = parser.add_mutually_exclusive_group(required=True)
+    group = parser.add_mutually_exclusive_group()
     group.add_argument("-t", "--to-hanguage", type=str, help="Converts english to hanguage")
     group.add_argument("-f", "--from-hanguage", type=str, help="Converts english to hanguage")
     
