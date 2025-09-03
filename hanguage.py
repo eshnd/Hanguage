@@ -83,4 +83,8 @@ if __name__ == "__main__":
     print("5 4 1 -> " + convert("5 4 1"))
     print("!!!@@! -> " + convert("!!!@@!"))
     while True:
-        print(convert(input("Hanguage converter: ")))
+        i = input("Hanguage converter: ")
+        if i != "exit":
+            print(convert(i))
+        else:
+            break
