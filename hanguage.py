@@ -82,3 +82,5 @@ if __name__ == "__main__":
     print("541 -> " + convert("541"))
     print("5 4 1 -> " + convert("5 4 1"))
     print("!!!@@! -> " + convert("!!!@@!"))
+    while True:
+        print(convert(input("Hanguage converter: ")))
