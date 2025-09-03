@@ -82,7 +82,6 @@ def from_h(i):
     s = {v: k for k, v in m.items()}
     o = []
     for c in i.split("."):
-        c = c.lower()
         if c in s:
             o.append(s[c])
         else:
