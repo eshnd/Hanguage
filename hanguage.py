@@ -99,9 +99,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     if args.to_hanguage:
-        print(to_h(full_text))
+        print(to_h(args.to_hanguage))
     elif args.from_hanguage:
-        print(from_h(full_text))
+        print(from_h(args.from_hanguage))
     else:
         print("Examples:")
         print("    Hello guys -> " + to_h("Hello guys"))
